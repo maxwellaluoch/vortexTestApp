@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+     <meta charset="utf-8"/>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1,
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
+      <meta name = "apple-mobile-web-app-capable" content = "yes" />
+      <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
+      <title>Vortex Retail Quote</title>
+      <!-- Path to Framework7 Library CSS-->
+      <link rel="stylesheet" href="css/framework7.min.css">
+      <link rel="stylesheet" href="css/framework7-icons.css">
+   </head>
+
+   <body>
+     <!-- Status bar overlay for fullscreen mode-->
+     <div class="statusbar-overlay"></div>
+     <!-- Panels overlay-->
+     <div class="panel-overlay"></div>
+     <!-- Left panel with reveal effect-->
+     <div class="panel panel-left panel-reveal">
+       <div class="content-block">
+         <div class="content-block-title icon-cell"><span class="icon-name"><b>Vortex Admin</b></span></div>
+         <div class="list-block">
+           <ul>
+             <li>
+               <a href="index.html" class="item-link">
+                 <div class="item-content">
+                   <div class="item-inner">
+                     <div class="item-title"><i class="f7-icons color-blue">list</i><span class="icon-name"><b> Quote</b></span></div>
+                   </div>
+                 </div>
+               </a>
+             </li>
+             <li>
+               <a href="items.html" class="item-link">
+                 <div class="item-content">
+                   <div class="item-inner">
+                     <div class="item-title"><i class="f7-icons color-blue">menu</i><span class="icon-name"><b> Items</b></span></div>
+                   </div>
+                 </div>
+               </a>
+             </li>
+            <li>
+              <a href="customer.html" class="item-link">
+                 <div class="item-content">
+                   <div class="item-inner">
+                     <div class="item-title"><i class="f7-icons color-blue">persons</i><span class="icon-name"><b> Customers</b></span></div>
+                   </div>
+                 </div>
+               </a>
+             </li>
+             <li>
+               <a href="report.html" class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title"><i class="f7-icons color-blue">document_text_fill</i><span class="icon-name"><b> Reports</b></span></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="item-link">
+                   <div class="item-content">
+                     <div class="item-inner">
+                       <div class="item-title"><i class="f7-icons color-blue">settings_fill</i><span class="icon-name"><b> Settings</b></span></div>
+                     </div>
+                   </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#" class="item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title"><i class="f7-icons color-blue">reload_round_fill</i><span class="icon-name"><b> Sychronization</b></span></div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link">
+                     <div class="item-content">
+                       <div class="">
+                         <div class="item-title open-login-screen"><i class="f7-icons color-blue">logout</i><span class="icon-name"><b> Logout</b></span></div>
+                       </div>
+                     </div>
+                   </a>
+                 </li>
+             </ul>
+         </div>
+       </div>
+     </div>
+      <div class = "views">
+         <div class = "view view-main">
+            <div class = "navbar">
+               <div class = "navbar-inner">
+                 <div class="left">
+                   <a href="#" data-panel="left" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+                 </div>
+                 <!-- We have home navbar without left link-->
+                 <div class="center sliding">Quotes</div>
+                 <div class="right">
+                  <!-- Right link contains only icon - additional "icon-only" class-->
+                  <a href="quote.html" class="persons"> <i class="f7-icons size-100 color-blue">add_round</i></a>
+                </div>
+               </div>
+            </div>
+            <div class="pages navbar-through toolbar-through">
+              <!-- Page, data-page contains page name-->
+              <div data-page="index" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                  <div class="content-block-title">Quotes</div>
+                  <div class="list-block">
+                    <ul id="qt">
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      <!-- Path to Framework7 Library JS-->
+      <script type="text/javascript" src="js/framework7.min.js"></script>
+      <script type="text/javascript" src="js/framework7.js"></script>
+      <!-- Path to your app js-->
+      <script type="text/javascript" src="js/my-app.js"></script>
+   </body>
+</html>

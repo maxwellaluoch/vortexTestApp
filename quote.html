@@ -1,0 +1,86 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" data-panel="left" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+    <div class="center sliding">Added A Quote</div>
+    <div class="right">
+     <!-- Right link contains only icon - additional "icon-only" class-->
+     <a href="customer.html" class="persons"> <i class="f7-icons size-100 color-blue">person</i></a>
+     <a href="items.html"> <i class="f7-icons size-100 color-blue">bag</i></a>
+     <a href=""> <i class="f7-icons size-100 color-blue list-button">check_round</i></a>
+     <a href=""> <i class="f7-icons size-100 color-blue list-button">close_round</i></a>
+   </div>
+  </div>
+</div>
+<div class="pages navbar-through toolbar-through">
+  <!-- Page, data-page contains page name-->
+  <div data-page="add_quote" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="content-block-title">Details</div>
+      <div class="list-block">
+        <ul id="CustoQuote">
+          <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Quote Discription :
+                    <input  name="Date" id="Comment" value=""></div>
+                </div>
+              </div>
+          </li>
+          <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Date : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  name="Date" id="DateTime" disabled></div>
+                </div>
+              </div>
+          </li>
+          <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Company : &nbsp;
+                    <input name="Company" id="Company" value="Company"  disabled/>
+                  </div>
+                    <input name="ID" id="ID" value="ID" hidden/>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <div id="qt"></div>
+      <div class="content-block-title">Items</div>
+      <div class="content-block">
+        <div class="content-block-inner">
+          <div class="data-table" id="Description">
+
+        </div>
+        </div>
+      </div>
+      <div class="content-block-title">Items Total Amount</div>
+      <div class="list-block">
+        <ul>
+          <li><div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Sub Total: <input id="sum" name="total" value="Total"/></div>
+              </div>
+            </div>
+          </li>
+          <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Tax: 150.00</div>
+                </div>
+              </div></li>
+          <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" id="total_sum">Total: <input id="sub_total" name="sub_total" value="Total"/></div>
+                </div>
+              </div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

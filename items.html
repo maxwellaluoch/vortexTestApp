@@ -1,0 +1,34 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" data-panel="left" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+    <div class="center sliding">Items</div>
+  </div>
+</div>
+  <div data-page="products" class="page">
+    <!-- Search Bar -->
+    <form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+       <div class="searchbar-input">
+           <input type="search" placeholder="Search">
+           <a href="#" class="searchbar-clear"></a>
+       </div>
+       <a href="#" class="searchbar-cancel">Cancel</a>
+   </form>
+ <!-- Search Bar overlay -->
+ <div class="searchbar-overlay"></div>
+    <!-- Scrollable page content-->
+    <div class="page-content">
+     <div class="content-block searchbar-not-found">
+         Nothing found
+     </div>
+      <div class="list-block list-block-search searchbar-found">
+        <div class="list-group">
+            <ul id="items" class="item_data">
+
+            </ul>
+         </div>
+       </div>
+    </div>
+  </div>
